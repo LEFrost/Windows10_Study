@@ -8,6 +8,8 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <TextBox Name="input" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBox>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Top" Content="发送" Click="Button_Click"></Button>
+        <TextBlock Name="show" TextWrapping="WrapWholeWords" VerticalAlignment="Bottom" Height="500"></TextBlock>
     </Grid>
 </Page>
