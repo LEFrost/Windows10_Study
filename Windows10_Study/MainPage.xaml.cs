@@ -33,8 +33,6 @@ namespace Windows10_Study
         {
             string content="";
 
-            DebugSettings;
-
             HttpClient httpClient = new HttpClient();
             
             Params.Add(new KeyValuePair<string, string>("prov",input.Text));
@@ -43,6 +41,7 @@ namespace Windows10_Study
             
             if(response.StatusCode==System.Net.HttpStatusCode.OK)
             {
+                content = response.Content.ReadAsStringAsync().Result;
                 content = response.Content.ReadAsStringAsync().Result;
             }
             show.Text = content.ToString();
