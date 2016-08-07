@@ -33,7 +33,6 @@ namespace Windows10_Study
         {
             string content="";
 
-            DebugSettings;
 
             HttpClient httpClient = new HttpClient();
             
