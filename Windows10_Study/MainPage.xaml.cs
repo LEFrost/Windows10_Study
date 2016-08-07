@@ -42,7 +42,6 @@ namespace Windows10_Study
             if(response.StatusCode==System.Net.HttpStatusCode.OK)
             {
                 content = response.Content.ReadAsStringAsync().Result;
-                content = response.Content.ReadAsStringAsync().Result;
             }
             show.Text = content.ToString();
         }
