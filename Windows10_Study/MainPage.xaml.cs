@@ -32,6 +32,9 @@ namespace Windows10_Study
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string content="";
+
+
+
             HttpClient httpClient = new HttpClient();
             
             Params.Add(new KeyValuePair<string, string>("prov",input.Text));
